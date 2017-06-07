@@ -56,9 +56,9 @@ class FormularioAutor extends Component {
         return(
             <div className="pure-form pure-form-aligned">
               <form className="pure-form pure-form-aligned" onSubmit={this.enviaForm} method="post">
-                <InputCustomizado label="Nome" id="nome" type="text" value={this.state.nome} onChange={this.setNome} />
-                <InputCustomizado label="E-Mail" id="email" type="email" value={this.state.email} onChange={this.setEmail} />
-                <InputCustomizado label="Senha" id="senha" type="password" value={this.state.senha} onChange={this.setSenha} />
+                <InputCustomizado label="Nome" id="nome" name="nome" type="text" value={this.state.nome} onChange={this.setNome} />
+                <InputCustomizado label="E-Mail" id="email" name="email" type="email" value={this.state.email} onChange={this.setEmail} />
+                <InputCustomizado label="Senha" id="senha" name="senha" type="password" value={this.state.senha} onChange={this.setSenha} />
                 <BotaoSubmitCustomizado label="Salvar"/>
               </form>             
             </div>

@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import {browserHistory} from 'react-router';
 
 export default class Header extends Component {
+
+    logout(){
+      browserHistory.push('/logout');
+    }
 
     render(){
         return (
@@ -14,6 +19,7 @@ export default class Header extends Component {
             <input type="submit" value="Buscar" className="header-busca-submit"/>
           </form>
 
+          <input type="button" value="Logout" onClick={this.logout} />
 
           <nav>
             <ul className="header-nav">

@@ -1,1 +1,1 @@
-java -jar -Dspring.datasource.password=123456 instalura.jar
+java -jar -Dspring.datasource.password=root instalura.jar
